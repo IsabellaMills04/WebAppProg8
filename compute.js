@@ -28,6 +28,7 @@ const server =
           // Process the queries here
           res.statusCode = 200      //code for OK
           res.setHeader('Content-Type', 'text/plain') 
+          res.setHeader('Access-Control-Allow-Origin', '*') 
           res.write(`acosh(${x}) is ${fx} and acosh(${y}) is ${fy}`)
           res.end();
         
